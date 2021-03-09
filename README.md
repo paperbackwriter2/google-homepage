@@ -1,0 +1,1 @@
+This is my first ever webdev project. I will be cloning the Google homepage with the help of Chrome dev tools.
