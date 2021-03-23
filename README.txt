@@ -1,0 +1,3 @@
+This is my first ever webdev project. I will be cloning the Google homepage with the help of Chrome dev tools.
+
+I've finally completed this project after ignoring it for a couple of weeks. I was endlessly frustrated with CSS, but the reality was that I didn't have a solid enough foundation to even begin to tackle this project. After spending more time on fcc and multiple tutorials, I was able to somewhat satisfactorily clone the Google homepage. 

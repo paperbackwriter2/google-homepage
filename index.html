@@ -1,84 +1,147 @@
 <!DOCTYPE html>
-<style>
-    #container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 12%;
-    }
-
-    .searchform {
-        display: flex;
-        padding-top: 2%;
-        width: 650px;
-        border-style:hidden;
-    }
-    .searchbox {
-        height: 38px;
-        background-color: transparent;
-        width: 480px;
-        border-radius: 50px;
-        border-style:solid;
-        border-color:rgba(221, 220, 220, 0.89);
-        border-width: 1px;
-        position:relative;
-    }
-
-    input[type="text"] {
-        display: block;
-        margin: 0 auto;
-    }
-
-    .leftnav a{
-        display: inline-block;
-        padding-left: 15px;
-        opacity: .75;
-        padding-top: 14px;
-        float: left;
-    }
-
-    .rightnav {
-        display: inline-block;
-        opacity: .75;
-        padding-top: 14px;
-        float: right;
-        padding-right: 15px;
-    }
-    .rightnav button {
-        height: 30px;
-        width: 70px;
-        background-color:rgb(0, 102, 255);
-        border-radius: 2px;
-        color:white;
-        font-weight: bold;
-        border-style:none;
-    }
-    body {
-        font-family: arial,sans-serif;
-        font-size: 13px;
-    }
-
-</style>
-
-<html>
+<html lang="en">
     <head>
-    </head>
-    <body> 
-        <div class="leftnav">
-            <a>About</a>
-            <a>Store</a>
+        <title>My Fake Google Homepge</title>
+        
+        <style>
+        * {
+            box-sizing: border-box;
+            color: #5F6368;
+        }
 
+        a:hover {
+            text-decoration: underline;
+        }
+        #logo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            padding-top: 90px;
+            width: 272px;
+        }
+
+        .wrapper {
+            display: grid;
+
+        }
+        nav {
+            display: inline;
+            font-family: arial, sans-serif;
+            font-size: 13px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 0px;
+        }
+        li {
+            display: inline-block;
+            padding: 10px;
+            list-style-type: none;
+            margin-top: 10px;
+            margin-left: 5px;
+            text-decoration: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #searchbar {
+            width: 400px;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 24px;
+            border-radius: 30px;
+            height: 45px;
+            width: 450px;
+            border-width 1px;
+            border-style: solid;
+            border-color: lightgray;
+            border-width: 1px;
+        }
+        #morebuttons {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-color: none;
+        }
+
+        #button1, #button2 {
+            width: 135px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 3px;
+            border-style: none;
+            
+        }
+
+        #button1:hover, #button2:hover {
+            border-style: double;
+        }
+
+        #signin {
+            background-color: #4285f4;
+            font-weight: 800;
+            color: white;
+            border-style: none;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top:7px;
+            padding-bottom: 7px;
+            border-radius: 2px;
+        }
+
+        #footer {
+            background-color: rgba(237, 237, 237, 0.922);
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            height: 5%;
+            border-color: gray;
+            font-size: 13.5px;
+        }
+        </style> 
+
+      
+
+
+
+    </head>
+    <body>
+        <div class="wrapper">
+        <nav>
+            <ul class="navleft">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Store</a></li>
+            </ul>
+            <ul class="navright">
+                <li><a href="#">Gmail</a></li>
+                <li><a href="#">Images</a></li>
+                <img>
+                <button action="#" id="signin">Sign in</button>
+            </ul>
+        </nav>
+            <img id="logo" src=logo.png>
+            <input type="text" id="searchbar">
+            <ul id="morebuttons" action="#">
+                <li><button id="button1">Google Search</button></li>
+                <li><button id="button2">I'm Feeling Lucky</button></li>
+            </ul>
+            <nav id="footer">
+                <ul class="footerleft">
+                    <li><a href="#">Advertising</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">How Search works</a></li>
+                </ul>
+                <ul class="footerright">
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="rightnav">
-            <a>Gmail</a>
-            <a>Images</a>
-            <button type="signin">Sign in</button>
-        </div>
-        <div id="container">
-            <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"</img>
-            <div class="searchform">
-                <input class="searchbox" type="text">
-            </div>
-        </div> 
     </body>
+
 </html>
