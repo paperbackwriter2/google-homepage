@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <title>My Fake Google Homepge</title>
         
         <style>
@@ -47,20 +49,32 @@
             text-decoration: none;
         }
 
-        #searchbar {
-            width: 400px;
-            display: block;
-            margin-right: auto;
+        .input-container {
+            display: flex;
+            text-align: center;
             margin-left: auto;
-            margin-top: 24px;
-            border-radius: 30px;
-            height: 45px;
+            margin-right: auto;
+            margin-bottom: 30px;
+        }
+
+        i {
+            text-align: center;
+        }
+
+        #search-input {
+            height: 40px;
             width: 450px;
             border-width 1px;
             border-style: solid;
             border-color: lightgray;
             border-width: 1px;
-        }
+            display: flex;
+            border-radius: 80px;
+        } 
+        
+        #search-input:hover {
+            border: 1px outset rgba(169, 169, 169, 0.538);
+            }
         #morebuttons {
             display: block;
             margin-left: auto;
@@ -124,7 +138,12 @@
             </ul>
         </nav>
             <img id="logo" src=logo.png>
-            <input type="text" id="searchbar">
+
+            <div class="input-container">
+                <i class="material-icons">search</span>
+                <input type="text" id="search-input">
+            </div>
+
             <ul id="morebuttons" action="#">
                 <li><button id="button1">Google Search</button></li>
                 <li><button id="button2">I'm Feeling Lucky</button></li>
